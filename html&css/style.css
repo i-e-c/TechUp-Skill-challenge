@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Futura Std Book";
+    font-family: "Futura PT Light"; 
+    src: url("//db.onlinewebfonts.com/t/7c9d8cabea7f4697dde2e98c001c5f2d.eot");
+    src: url("//db.onlinewebfonts.com/t/35e5d1a7aa6da471de4cfb4a47ebaca8.eot"); 
+    src: url("//db.onlinewebfonts.com/t/35e5d1a7aa6da471de4cfb4a47ebaca8.woff") format("woff");
+    src: url("//db.onlinewebfonts.com/t/7c9d8cabea7f4697dde2e98c001c5f2d.woff") format("woff");    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Futura Std Book";
+}
+
+/* body {
+    font-family: Futura;
+} */
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.svg svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.9px);
+    height: 540px;
+}
+
+.svg .shape-fill {
+    fill: #00c991;
+}
+
+.contact {
+    position: absolute;
+    height: 75vh;
+    width: 80%;
+    box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.1);
+    /* padding-left: 80px; */
+    background: #fff;
+    /* background-image: url(background.svg);
+    background-repeat: no-repeat; */
+}
+
+.contact .svg-contact{
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.svg-contact svg {
+    position: relative;
+    display: flex;
+    width: calc(120% + 1.9px);
+    height: 320px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+button {
+    background: rgb(255, 140, 95);
+    width: 150px;
+    border: none;
+    color: #fff;
+    height: 35px;
+    margin-top: 50px;
+}
+
+.title {
+    /* font-weight: 900; */
+    padding-left: 100px;
+    /* padding-top: 10px; */
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.title h1 {
+    bottom: 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+.contact-info hr {
+    border: 0.5px solid rgba(192, 192, 192, 0.300);
+}
+
+.name {
+    display: flex;
+    gap: 40px;
+    width: 80%;
+}
+
+.name input {
+    width: 100% !important;
+}
+
+.contact-info .left {
+    flex-basis: 60%;
+    padding-left: 100px;
+    /* padding-right: 70px; */
+}
+
+.contact-info .right {
+    font-family: "Futura PT Light";
+    flex-basis: 30%;
+    margin-left: 20px;
+    padding-right: 100px;
+    font-size: 15px;
+}
+
+.contact .left p {
+    width: 80%;
+}
+
+.contact-info .right p {
+    /* width: 80%; */
+    margin-top: 15px;
+}
+
+.down-link {
+    /* margin-top: 5px; */
+    display: flex;
+    align-items: center;
+}
+
+.down-link img {
+    flex-basis: 5%;
+    width: 15px;
+    padding-top: 15px;
+}
+
+.down-link p {
+    padding-left: 5px;
+    
+}
+
+.wrapper {
+    /* width: 50%; */
+    margin-bottom: 30px;
+}
+
+.wrapper .data-input{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+.wrapper .data-input input{
+    height: 100%;
+    width: 80%;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid silver;
+}
+
+.data-input input:focus ~ label,
+.data-input input:valid ~ label,
+.data-input textarea:focus ~label,
+.data-input textarea:valid ~label {
+    transform: translateY(-22px);
+    font-size: 10px;
+    /* bottom: 10px; */
+}
+
+.wrapper .data-input label {
+    position: absolute;
+    font-size: 15px;
+    bottom: 10px;
+    left: 0;
+    color: black;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
